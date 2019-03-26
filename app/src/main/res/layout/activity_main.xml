@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:text="+0"
                 android:textSize="30sp"
-                android:textAlignment="viewEnd"
+                android:textAlignment="viewEnd"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

@@ -19,5 +19,5 @@
         android:hint="Text 2"
         android:textSize="30dp" />
 
-    
+
 </android.widget.LinearLayout>

@@ -13,15 +13,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alola!"
+            android:text="Ejercicio 1"
             android:textSize="14pt"
             android:textAlignment="center"
             android:layout_marginTop="20px"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingrese sus textos: "
-            android:paddingLeft="40px"
+            android:text="Comparar textos"
             android:textSize="8pt"/>
     </LinearLayout>
     <LinearLayout
@@ -33,14 +32,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
-                android:id="@+id/input1"
+                android:id="@+id/ex1_input1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="270dp"
                 android:hint="Texto 1"
                 android:textSize="30sp" />
             <TextView
-                android:id="@+id/textDif1"
+                android:id="@+id/ex1_textDif1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="+0"
@@ -52,14 +51,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
-                android:id="@+id/input2"
+                android:id="@+id/ex1_input2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="270dp"
                 android:hint="Texto 2"
                 android:textSize="30sp" />
             <TextView
-                android:id="@+id/textDif2"
+                android:id="@+id/ex1_textDif2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="+0"
@@ -67,13 +66,34 @@
                 android:textAlignment="viewEnd" />
         </LinearLayout>
         <TextView
-            android:id="@+id/joinedStringsOut"
+            android:id="@+id/ex1_joinedStringsOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:background="#EEE"
             android:textSize="12pt"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de caracteres a unir"
+            android:textSize="8pt"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <SeekBar
+                android:id="@+id/ex1_charsToJoinBar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:max="50"/>
+            <TextView
+                android:id="@+id/ex1_charsToJoinText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="8pt"
+                android:text="3"/>
+        </LinearLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

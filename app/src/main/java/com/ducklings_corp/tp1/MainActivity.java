@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.goAct2:
                 destination = new Intent(MainActivity.this,Exercise_2.class);
                 break;
+            case R.id.goAct3:
+                destination = new Intent(MainActivity.this,Exercise_3.class);
+                break;
             default:
                 return;
         }

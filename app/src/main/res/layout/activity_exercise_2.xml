@@ -23,12 +23,24 @@
             android:text="Contar letras"
             android:textSize="8pt"/>
     </LinearLayout>
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escriba..."
-        android:id="@+id/ex2_textInput"
-        android:textSize="30sp"/>
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ex2_textInput"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="Escriba..."
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/ex2_charInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="A"
+            android:textSize="30sp"
+            android:maxLength="1"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,12 +67,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A's: "
-            android:textSize="80dp"/>
+            android:text=""
+            android:textSize="80dp"
+            android:hint="A's: "
+            android:id="@+id/ex2_countLalbel"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ex2_AsCount"
+            android:id="@+id/ex2_charsCount"
             android:text="  "
             android:hint="..."
             android:textSize="80dp"/>

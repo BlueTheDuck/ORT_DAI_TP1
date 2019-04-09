@@ -23,24 +23,24 @@ public class Exercise_1 extends AppCompatActivity {
 
         // Add listener to update the TextView charsToJoinText
         ex1_charsToJoin.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                TextView charsToJoinText;
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    TextView charsToJoinText;
 
-                charsToJoinText = findViewById(R.id.ex1_charsToJoinText);
+                    charsToJoinText = findViewById(R.id.ex1_charsToJoinText);
 
-                charsToJoinText.setText(""+progress);
-            }
+                    charsToJoinText.setText(""+progress);
+                }
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
 
-            }
+                }
 
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
 
-            }
+                }
         });
     }
 

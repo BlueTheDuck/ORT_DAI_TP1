@@ -24,20 +24,31 @@
             android:textSize="8pt"/>
     </LinearLayout>
     <EditText
+        android:id="@+id/ex3_textInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ex3_textInput"
         android:hint="Escriba aquí..."/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Invertir"
         android:onClick="invertText"/>
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="...íuqa abircsE"
-        android:textSize="9pt"
-        android:id="@+id/ex3_invertedText"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="...íuqa abircsE"
+            android:textSize="9pt"
+            android:id="@+id/ex3_invertedText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EEE"
+            android:textSize="9pt"
+            android:text=""
+            android:id="@+id/ex3_palindrome"/>
+    </LinearLayout>
 
 </LinearLayout>
